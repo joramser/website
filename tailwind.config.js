@@ -19,6 +19,7 @@ module.exports = {
       animation: {
         'slow-fade-in': 'fadeIn 750ms linear',
         'slide-up-and-fade': 'slideUpAndFade 100ms',
+        'scroll-vertical': 'scrollVertical 20s infinite',
       },
       keyframes: {
         fadeIn: {
@@ -28,6 +29,10 @@ module.exports = {
         slideUpAndFade: {
           '0%': { opacity: 0, transform: 'translateY(2px)' },
           '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+        scrollVertical: {
+          '0%': { transform: 'translateY(0)' },
+          '100%': { transform: 'translateY(calc(-480px*2))' },
         },
       },
       boxShadow: {

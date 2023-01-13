@@ -21,6 +21,7 @@ export const BasicLink: React.FC<BasicLinkProps> = ({ children, className, color
         { 'text-emerald-500 hover:text-emerald-600 hover:shadow-emerald-600': color === 'emerald' },
         { 'text-rose-500 hover:text-rose-600 hover:shadow-rose-600': color === 'rose' },
         { 'text-indigo-500 hover:text-indigo-600 hover:shadow-indigo-600': color === 'indigo' },
+        { 'text-amber-500 hover:text-amber-600 hover:shadow-amber-600': color === 'amber' },
         className
       )}
       target={clsx({ _blank: !!external })}

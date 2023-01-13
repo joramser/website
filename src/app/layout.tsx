@@ -31,10 +31,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
         }}
       >
         <Container className="px-4 sm:px-0 lg:px-16">
-          <main className="mb-4 w-full md:pt-16 lg:pt-24">
-            {children}
-            <AnalyticsWrapper />
-          </main>
+          {children}
+          <AnalyticsWrapper />
           <Footer />
         </Container>
       </body>
