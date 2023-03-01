@@ -1,12 +1,9 @@
-import { DefaultSeoProps } from 'next-seo';
+import type { Metadata } from 'next';
 import { data } from '@web/data';
 
-export const defaultSEO: DefaultSeoProps = {
+export const defaultSEO: Metadata = {
   title: data.fullName,
   description: data.slogan,
-  twitter: {
-    cardType: 'summary',
-  },
   openGraph: {
     title: data.fullName,
     description: data.slogan,
@@ -18,5 +15,8 @@ export const defaultSEO: DefaultSeoProps = {
         alt: 'Og image',
       },
     ],
+  },
+  twitter: {
+    card: 'summary',
   },
 };

@@ -1,5 +1,8 @@
 import '../styles/globals.css';
 
+import type { Metadata } from 'next';
+
+import { defaultSEO } from '@web/seo';
 import { Container } from '@web/components/Container';
 import { Footer } from '@web/components/Footer';
 import { AnalyticsWrapper } from '@web/components/Analytics';
@@ -7,6 +10,19 @@ import { AnalyticsWrapper } from '@web/components/Analytics';
 interface RootLayoutProps {
   children: React.ReactNode;
 }
+
+export const metadata: Metadata = {
+  ...defaultSEO,
+  icons: {
+    icon: [
+      { url: '/favicon/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
+      { url: '/favicon/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
+    ],
+    shortcut: '/favicon/favicon.ico',
+    apple: { url: '/favicon/apple-touch-icon.png', sizes: '180x180' },
+  },
+  manifest: '/favicon/site.webmanifest',
+};
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
