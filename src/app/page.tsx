@@ -22,10 +22,10 @@ export default function HomePage() {
           <div className="mt-8 tracking-wide lg:mt-12">
             <p className="mt-4">
               I work at{' '}
-              <BasicLink color="emerald" href="https://veriff.com" className="font-semibold" external>
-                Veriff
+              <BasicLink color="violet" href="https://readyplayer.me" className="font-semibold" external>
+                ReadyPlayerMe
               </BasicLink>{' '}
-              helping to shape the future of Identity Verification.
+              helping to break down walls to build a more connected virtual world.
             </p>
             <p className="mt-4">
               Interested in topics going from <b className="font-semibold text-sky-400">Software architecture</b> and{' '}
