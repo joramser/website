@@ -2,31 +2,31 @@
   "name": "jorges-website",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 4100",
+    "dev": "next dev --turbopack -p 4100",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint --ext .js,.ts ."
+    "lint": "eslint ."
   },
   "dependencies": {
-    "@radix-ui/react-tooltip": "^1.0.4",
-    "@vercel/analytics": "^0.1.11",
-    "clsx": "^1.2.1",
-    "next": "^13.2.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@radix-ui/react-tooltip": "^1.1.3",
+    "@vercel/analytics": "^1.3.1",
+    "clsx": "^2.1.1",
+    "next": "^15.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@types/node": "18.14.2",
-    "@types/react": "18.0.28",
-    "@types/react-dom": "18.0.11",
-    "autoprefixer": "^10.4.13",
-    "eslint": "8.35.0",
-    "eslint-config-next": "13.2.3",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "postcss": "^8.4.21",
-    "prettier": "^2.8.4",
-    "tailwindcss": "^3.2.7",
-    "typescript": "4.9.5"
+    "@types/node": "22.7.9",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.0.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "postcss": "^8.4.47",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.14",
+    "typescript": "5.6.3"
   }
 }

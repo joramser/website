@@ -25,7 +25,7 @@ export default function HomePage() {
               <BasicLink color="violet" href="https://readyplayer.me" className="font-semibold" external>
                 ReadyPlayerMe
               </BasicLink>{' '}
-              helping to break down walls to build a more connected virtual world.
+              helping to build bridges between virtual worlds.
             </p>
             <p className="mt-4">
               Interested in topics going from <b className="font-semibold text-sky-400">Software architecture</b> and{' '}
