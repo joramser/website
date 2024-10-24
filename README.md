@@ -4,8 +4,8 @@ Personal website. Still WIP 🚧 but I wanted to put something out there.
 
 ## Uses
 
-- Next 13.
-- Tailwind 3.
+- Next.js.
+- Tailwind.
 - Radix UI.
 - Typescript.
 - Vercel.
