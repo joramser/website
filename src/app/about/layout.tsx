@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
-import { data } from '@web/data';
 import { Nav } from '@web/components/Nav';
+import { data } from '@web/data';
 import { defaultSEO } from '@web/seo';
 
 interface RootLayoutProps {

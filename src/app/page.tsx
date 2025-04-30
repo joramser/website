@@ -12,7 +12,7 @@ export default function HomePage() {
       <section className="flex animate-slow-fade-in flex-col-reverse text-xl sm:flex-col md:flex-row md:text-2xl">
         <div className="md:w-3/5 md:pr-4 lg:pr-12">
           <div>
-            <h1 className="text-title relative z-10 -mt-10 pt-4 text-center text-4xl font-bold text-white backdrop-blur-sm sm:mt-0 sm:pt-0 md:text-left md:backdrop-blur-none lg:text-5xl">
+            <h1 className="text-title relative z-10 -mt-10 pt-4 text-center text-4xl font-bold text-white backdrop-blur-xs sm:mt-0 sm:pt-0 md:text-left md:backdrop-blur-none lg:text-5xl">
               <span>{data.fullName}</span>
             </h1>
             <p className="mt-2 text-center tracking-wide md:text-left">

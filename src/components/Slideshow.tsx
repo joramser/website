@@ -54,7 +54,7 @@ export const Slideshow: React.FC<SlideshowProps> = ({ images, className }) => {
           />
           <Image
             src={image.blurDataURL}
-            alt="blur"
+            alt="blur-sm"
             className="absolute z-1 left-4 top-4 bg-cover w-full h-full opacity-50"
             width={360}
             height={480}

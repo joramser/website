@@ -1,6 +1,6 @@
+import { Slideshow } from '@web/components/Slideshow';
 import { BasicLink } from '@web/components/ui/BasicLink';
 import { EmphasisText } from '@web/components/ui/EmphasisText';
-import { Slideshow } from '@web/components/Slideshow';
 
 export default function AboutPage() {
   return (

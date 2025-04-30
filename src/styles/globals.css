@@ -1,5 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Source Sans 3:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source Sans 3:wght@300;400;600;700&display=swap')
+layer(base);
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --font-sans:
+    'Source Sans 3', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+  --color-brand: #7678ed;
+
+  --animate-slow-fade-in: fadeIn 750ms linear;
+  --animate-slide-up-and-fade: slideUpAndFade 100ms;
+  --animate-scroll-vertical: scrollVertical 20s infinite;
+
+  --shadow-underline: 0px 2px 0px;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      transform: 100;
+    }
+  }
+  @keyframes slideUpAndFade {
+    0% {
+      opacity: 0;
+      transform: translateY(2px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes scrollVertical {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(calc(-480px * 2));
+    }
+  }
+}
