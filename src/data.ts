@@ -5,7 +5,7 @@ export const data = {
   links: [
     { title: 'Github', src: 'https://github.com/joramser' },
     { title: 'Twitter', src: 'https://twitter.com/joramser' },
-    { title: 'Linkedin', src: 'https://www.linkedin.com/in/jramirezserrato/' },
+    { title: 'Linkedin', src: 'https://www.linkedin.com/in/joramser/' },
   ],
   tools: [
     { title: 'Node.js', icon: '/icons/nodejs.svg' },
