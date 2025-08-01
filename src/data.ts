@@ -3,8 +3,8 @@ export const data = {
   url: 'https://jorge.rs',
   slogan: 'Senior Software Engineer transforming ideas into reality.',
   links: [
-    { title: 'Github', src: 'https://github.com/jramirezs' },
-    { title: 'Twitter', src: 'https://twitter.com/jramirezserrato' },
+    { title: 'Github', src: 'https://github.com/joramser' },
+    { title: 'Twitter', src: 'https://twitter.com/joramser' },
     { title: 'Linkedin', src: 'https://www.linkedin.com/in/jramirezserrato/' },
   ],
   tools: [
