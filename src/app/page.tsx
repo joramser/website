@@ -15,18 +15,14 @@ export default function HomePage() {
             <h1 className="text-title relative z-10 -mt-10 pt-4 text-center text-4xl font-bold text-white backdrop-blur-xs sm:mt-0 sm:pt-0 md:text-left md:backdrop-blur-none lg:text-5xl">
               <span>{data.fullName}</span>
             </h1>
-            <p className="mt-2 text-center tracking-wide md:text-left">
+            <p className="font-mono text-orange-400">
+              @{data.handle}
+            </p>
+            <p className="mt-4 text-center tracking-wide md:text-left">
               <b className="font-semibold text-indigo-400">Senior Software Engineer</b> transforming ideas into reality.
             </p>
           </div>
           <div className="mt-8 tracking-wide lg:mt-12">
-            <p className="mt-4">
-              I work at{' '}
-              <BasicLink color="violet" href="https://readyplayer.me" className="font-semibold" external>
-                ReadyPlayerMe
-              </BasicLink>{' '}
-              helping to build bridges between virtual worlds.
-            </p>
             <p className="mt-4">
               Interested in topics going from <b className="font-semibold text-sky-400">Software architecture</b> and{' '}
               <b className="font-semibold text-sky-400">Modern web technologies</b> to{' '}

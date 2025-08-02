@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { data } from '@web/data';
 
 export const defaultSEO: Metadata = {
+  metadataBase: new URL('https://jorge.rs'),
   title: data.fullName,
   description: data.slogan,
   openGraph: {

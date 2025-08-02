@@ -1,5 +1,6 @@
 export const data = {
   fullName: 'Jorge Ramírez Serrato',
+  handle: 'joramser',
   url: 'https://jorge.rs',
   slogan: 'Senior Software Engineer transforming ideas into reality.',
   links: [
