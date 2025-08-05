@@ -11,18 +11,18 @@ export default function HomePage() {
     <main className="mb-4 w-full md:pt-16 lg:pt-24">
       <section className="flex animate-slow-fade-in flex-col-reverse text-xl sm:flex-col md:flex-row md:text-2xl">
         <div className="md:w-3/5 md:pr-4 lg:pr-12">
-          <div>
-            <h1 className="text-title relative z-10 -mt-10 pt-4 text-center text-4xl font-bold text-white backdrop-blur-xs sm:mt-0 sm:pt-0 md:text-left md:backdrop-blur-none lg:text-5xl">
+          <div className='text-center md:text-left'>
+            <h1 className="text-title relative z-10 -mt-10 pt-4 text-4xl font-bold text-white backdrop-blur-xs sm:mt-0 sm:pt-0 md:backdrop-blur-none lg:text-5xl">
               <span>{data.fullName}</span>
             </h1>
             <p className="font-mono text-orange-400">
               @{data.handle}
             </p>
-            <p className="mt-4 text-center tracking-wide md:text-left">
+            <p className="mt-4 tracking-wide">
               <b className="font-semibold text-indigo-400">Senior Software Engineer</b> transforming ideas into reality.
             </p>
           </div>
-          <div className="mt-8 tracking-wide lg:mt-12">
+          <div className="mt-8 tracking-wide lg:mt-12">           
             <p className="mt-4">
               Interested in topics going from <b className="font-semibold text-sky-400">Software architecture</b> and{' '}
               <b className="font-semibold text-sky-400">Modern web technologies</b> to{' '}
@@ -90,11 +90,11 @@ export default function HomePage() {
             <ButtonLink href="/about" className="mr-4 md:mr-0">
               About
             </ButtonLink>
-            <Tooltip content="Coming soon! ⌛" className="text-lg">
+            {/* <Tooltip content="Coming soon! ⌛" className="text-lg">
               <ButtonLink href="#" disabled>
                 Blog
               </ButtonLink>
-            </Tooltip>
+            </Tooltip> */}
           </div>
         </div>
       </section>
