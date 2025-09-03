@@ -1,6 +1,6 @@
 # 🔗 [jorge.rs](https://jorge.rs)
 
-Personal website. Still WIP 🚧 but I wanted to put something out there.
+Personal website.
 
 ## Uses
 
