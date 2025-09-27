@@ -1,46 +1,59 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import { BasicLink } from '@web/components/ui/BasicLink';
-import { ButtonLink } from '@web/components/ui/ButtonLink';
-import { Tooltip } from '@web/components/ui/Tooltip';
+import { BasicLink } from "@web/components/ui/BasicLink";
+import { ButtonLink } from "@web/components/ui/ButtonLink";
+import { Tooltip } from "@web/components/ui/Tooltip";
 
-import { data } from '@web/data';
+import { data } from "@web/data";
 
 export default function HomePage() {
   return (
     <main className="mb-4 w-full md:pt-16 lg:pt-24">
       <section className="flex animate-slow-fade-in flex-col-reverse text-xl sm:flex-col md:flex-row md:text-2xl">
         <div className="md:w-3/5 md:pr-4 lg:pr-12">
-          <div className='text-center md:text-left'>
+          <div className="text-center md:text-left">
             <h1 className="text-title relative z-10 -mt-10 pt-4 text-4xl font-bold text-white backdrop-blur-xs sm:mt-0 sm:pt-0 md:backdrop-blur-none lg:text-5xl">
               <span>{data.fullName}</span>
             </h1>
-            <p className="font-mono text-orange-400">
-              @{data.handle}
-            </p>
+            <p className="font-mono text-orange-400">@{data.handle}</p>
             <p className="mt-4 tracking-wide">
-              <b className="font-semibold text-indigo-400">Senior Software Engineer</b> transforming ideas into reality.
+              <b className="font-semibold text-indigo-400">
+                Senior Software Engineer
+              </b>{" "}
+              transforming ideas into reality.
             </p>
           </div>
-          <div className="mt-8 tracking-wide lg:mt-12">           
+          <div className="mt-8 tracking-wide lg:mt-12">
             <p className="mt-4">
-              Interested in topics going from <b className="font-semibold text-sky-400">Software architecture</b> and{' '}
-              <b className="font-semibold text-sky-400">Modern web technologies</b> to{' '}
-              <b className="font-semibold text-rose-400">guitar playing</b> and{' '}
-              <b className="font-semibold text-amber-400">home-cooking</b>.
+              Interested in topics going from{" "}
+              <b className="font-semibold text-sky-400">
+                Software architecture
+              </b>{" "}
+              and{" "}
+              <b className="font-semibold text-sky-400">
+                Modern web technologies
+              </b>{" "}
+              to <b className="font-semibold text-rose-400">guitar playing</b>{" "}
+              and <b className="font-semibold text-amber-400">home-cooking</b>.
             </p>
             <div className="mt-4">
               <span className="inline-block">
-                From{' '}
-                <a href="https://www.youtube.com/watch?v=V12xrLlUGjI" title="Cartagena, Colombia">
+                From{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=V12xrLlUGjI"
+                  title="Cartagena, Colombia"
+                >
                   🇨🇴
-                </a>{' '}
+                </a>{" "}
                 <span className="inline md:hidden">- Cartagena, Colombia</span>
               </span>
               <span className="hidden md:inline"> - </span>
               <div className="group inline-block">
                 Based in
-                <span className="ml-2 inline-block cursor-pointer" title="Tallinn, Estonia">
+                <span
+                  className="ml-2 inline-block cursor-pointer"
+                  title="Tallinn, Estonia"
+                >
                   🇪🇪
                 </span>
                 <span className="md:hidden"> - Talinn, Estonia</span>
@@ -52,11 +65,16 @@ export default function HomePage() {
           </div>
           {/* Tools */}
           <div className="mt-8 md:mt-12">
-            <h3 className="font-semibold text-white">Some of the tools I like to work with:</h3>
+            <h3 className="font-semibold text-white">
+              Some of the tools I like to work with:
+            </h3>
             <div className="mt-4">
               <ul className="flex flex-wrap justify-center md:justify-start">
                 {data.tools.map((tool) => (
-                  <li key={tool.title} className="ml-4 opacity-70 transition first:ml-0 hover:opacity-100">
+                  <li
+                    key={tool.title}
+                    className="ml-4 opacity-70 transition first:ml-0 hover:opacity-100"
+                  >
                     <Tooltip content={tool.title} className="text-lg">
                       <Image
                         className="block"
@@ -75,7 +93,12 @@ export default function HomePage() {
           {/* Links */}
           <div className="mt-8 flex justify-center md:mt-14 md:justify-start">
             {data.links.map((link) => (
-              <BasicLink key={link.title} href={link.src} className="ml-4 text-lg first:ml-0 md:text-xl" external>
+              <BasicLink
+                key={link.title}
+                href={link.src}
+                className="ml-4 text-lg first:ml-0 md:text-xl"
+                external
+              >
                 {link.title}
               </BasicLink>
             ))}

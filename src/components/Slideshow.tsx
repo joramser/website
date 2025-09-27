@@ -1,11 +1,16 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import { clsx } from 'clsx';
-import Image from 'next/image';
+import { useState, useEffect } from "react";
+import { clsx } from "clsx";
+import Image from "next/image";
 
 type SlideshowProps = {
-  images: { src: string; alt: string; blurDataURL: string; position?: 'top' | 'center' | 'bottom' }[];
+  images: {
+    src: string;
+    alt: string;
+    blurDataURL: string;
+    position?: "top" | "center" | "bottom";
+  }[];
   className?: string;
 };
 
@@ -30,21 +35,21 @@ export const Slideshow: React.FC<SlideshowProps> = ({ images, className }) => {
   }, [images.length]);
 
   return (
-    <div className={clsx('w-full h-full relative', className)}>
+    <div className={clsx("w-full h-full relative", className)}>
       {images.map((image, index) => (
         <div
           key={image.src}
           className={clsx(
-            'transition-opacity duration-500',
-            { 'opacity-100': visibleIndex === index },
-            { 'opacity-0': visibleIndex !== index }
+            "transition-opacity duration-500",
+            { "opacity-100": visibleIndex === index },
+            { "opacity-0": visibleIndex !== index },
           )}
         >
           <Image
-            className={clsx('z-10 object-cover', {
-              'object-top': image.position === 'top',
-              'object-center': image.position === 'center',
-              'object-bottom': image.position === 'bottom',
+            className={clsx("z-10 object-cover", {
+              "object-top": image.position === "top",
+              "object-center": image.position === "center",
+              "object-bottom": image.position === "bottom",
             })}
             src={image.src}
             alt={image.alt}

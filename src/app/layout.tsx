@@ -1,11 +1,11 @@
-import '@web/styles/globals.css';
+import "@web/styles/globals.css";
 
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
 
-import { AnalyticsWrapper } from '@web/components/Analytics';
-import { Container } from '@web/components/Container';
-import { Footer } from '@web/components/Footer';
-import { defaultSEO } from '@web/seo';
+import { AnalyticsWrapper } from "@web/components/Analytics";
+import { Container } from "@web/components/Container";
+import { Footer } from "@web/components/Footer";
+import { defaultSEO } from "@web/seo";
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -15,13 +15,13 @@ export const metadata: Metadata = {
   ...defaultSEO,
   icons: {
     icon: [
-      { url: '/favicon/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
-      { url: '/favicon/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
+      { url: "/favicon/favicon-32x32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon/favicon-16x16.png", type: "image/png", sizes: "16x16" },
     ],
-    shortcut: '/favicon/favicon.ico',
-    apple: { url: '/favicon/apple-touch-icon.png', sizes: '180x180' },
+    shortcut: "/favicon/favicon.ico",
+    apple: { url: "/favicon/apple-touch-icon.png", sizes: "180x180" },
   },
-  manifest: '/favicon/site.webmanifest',
+  manifest: "/favicon/site.webmanifest",
 };
 
 export default function RootLayout({ children }: RootLayoutProps) {
