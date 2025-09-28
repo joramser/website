@@ -1,10 +1,8 @@
-import Image from "next/image";
-
 import { BasicLink } from "@web/components/ui/BasicLink";
 import { ButtonLink } from "@web/components/ui/ButtonLink";
 import { Tooltip } from "@web/components/ui/Tooltip";
-
 import { data } from "@web/data";
+import Image from "next/image";
 
 export default function HomePage() {
   return (

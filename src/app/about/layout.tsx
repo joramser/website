@@ -1,8 +1,7 @@
-import type { Metadata } from "next";
-
 import { Nav } from "@web/components/Nav";
 import { data } from "@web/data";
 import { defaultSEO } from "@web/seo";
+import type { Metadata } from "next";
 
 interface RootLayoutProps {
   children: React.ReactNode;

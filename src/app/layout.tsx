@@ -1,11 +1,10 @@
 import "@web/styles/globals.css";
 
-import type { Metadata } from "next";
-
 import { AnalyticsWrapper } from "@web/components/Analytics";
 import { Container } from "@web/components/Container";
 import { Footer } from "@web/components/Footer";
 import { defaultSEO } from "@web/seo";
+import type { Metadata } from "next";
 
 interface RootLayoutProps {
   children: React.ReactNode;

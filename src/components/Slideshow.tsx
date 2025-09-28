@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { clsx } from "clsx";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 type SlideshowProps = {
   images: {

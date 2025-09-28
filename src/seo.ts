@@ -1,5 +1,5 @@
-import type { Metadata } from "next";
 import { data } from "@web/data";
+import type { Metadata } from "next";
 
 export const defaultSEO: Metadata = {
   metadataBase: new URL("https://jorge.rs"),

@@ -1,6 +1,5 @@
+import type { AllowedColors } from "@web/components/ui/types";
 import { clsx } from "clsx";
-
-import { AllowedColors } from "@web/components/ui/types";
 
 type EmphasisTextProps = {
   color?: AllowedColors;

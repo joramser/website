@@ -1,7 +1,6 @@
-import Link, { LinkProps } from "next/link";
+import type { AllowedColors } from "@web/components/ui/types";
 import { clsx } from "clsx";
-
-import { AllowedColors } from "@web/components/ui/types";
+import Link, { type LinkProps } from "next/link";
 
 type BasicLinkProps = {
   color?: AllowedColors;
