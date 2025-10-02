@@ -19,4 +19,8 @@ export const data = {
     { title: "Docker", icon: "/icons/docker.svg" },
     { title: "AWS", icon: "/icons/amazonwebservices.svg" },
   ],
+  cv: {
+    web: "https://cv.jorge.rs",
+    ssh: "ssh cv.jorge.rs",
+  },
 };

@@ -1,8 +1,10 @@
+import { GlobeIcon, TerminalIcon } from "@phosphor-icons/react/ssr";
 import { BasicLink } from "@web/components/ui/BasicLink";
 import { ButtonLink } from "@web/components/ui/ButtonLink";
-import { Tooltip } from "@web/components/ui/Tooltip";
+import { CodeTab } from "@web/components/ui/CodeTab";
+// import { Tooltip } from "@web/components/ui/Tooltip";
 import { data } from "@web/data";
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -62,7 +64,7 @@ export default function HomePage() {
             </div>
           </div>
           {/* Tools */}
-          <div className="mt-8 md:mt-12">
+          {/* <div className="mt-8 md:mt-12">
             <h3 className="font-semibold text-white">
               Some of the tools I like to work with:
             </h3>
@@ -87,6 +89,41 @@ export default function HomePage() {
                 ))}
               </ul>
             </div>
+          </div> */}
+          <div className="mt-8 md:mt-12">
+            <h3 className="font-semibold text-white">
+              More about my experience:
+            </h3>
+            <CodeTab
+              className="text-lg mt-4"
+              items={[
+                {
+                  label: "Terminal",
+                  value: data.cv.ssh,
+                  content: (
+                    <>
+                      <span className="text-emerald-400">ssh </span>
+                      <span>{data.cv.ssh.replace("ssh ", "")}</span>
+                    </>
+                  ),
+                  icon: <TerminalIcon />,
+                },
+                {
+                  label: "Browser",
+                  value: data.cv.web,
+                  content: (
+                    <a
+                      className="text-emerald-300"
+                      href={data.cv.web}
+                      target="_blank"
+                    >
+                      {data.cv.web}
+                    </a>
+                  ),
+                  icon: <GlobeIcon />,
+                },
+              ]}
+            />
           </div>
           {/* Links */}
           <div className="mt-8 flex justify-center md:mt-14 md:justify-start">
