@@ -116,6 +116,7 @@ export default function HomePage() {
                       className="text-emerald-300"
                       href={data.cv.web}
                       target="_blank"
+                      rel="noopener"
                     >
                       {data.cv.web}
                     </a>

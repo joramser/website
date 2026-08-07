@@ -2,9 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  agentRules: false,
   experimental: {
     optimizePackageImports: ["@phosphor-icons/react"],
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
